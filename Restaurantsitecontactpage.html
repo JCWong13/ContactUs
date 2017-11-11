@@ -1,10 +1,27 @@
 <!DOCTYPE html>
+
+<link href="C:\Repos\ContactUs\Restaurant site V2.css"
+    rel="stylesheet"
+    type="text/css"/>
+
 <html>
         <head>
                 <title>The Office Restaurant</title>
+
+            <style>
+            .info1 {
+                color:cornflowerblue 
+            }
+
+            p {
+                word-spacing: 30px;
+            }
+            </style>
         </head>
             <body>
+                    <div id="head">
                 <center><h1>The Restaurant</h1></center>
+                </div>
             <hr>
             <a href="Restaurantsitemainpage.html">Home</a>
             <a href="RestaurantsiteMenupage.html">Menu</a>
@@ -12,21 +29,28 @@
             <hr>
     <form action="#" method="post">
         <table>
-        <div>
-            <td><label id="NameLabel" for="Name">Name:</label></td>
-            <td><input id="Name" name="Name" Type="Text"/></td>
+        <div class="info1">
+            <p>
+            <label id="NameLabel" for="Name">Name:</label>
+            <input id="Name" name="Name" Type="Text"/>
+            </p>
         </div>
     </table>
-        <div>
+        <div class="info1">
+            <p>
                 <label id="EmailLabel" for="Email">Email:</label>
                 <input id="Email" name="Email" Type="Text"/>
+            </p>
         </div>
-        <div>
+        <div class="info1">
+            <p>
                 <label id="PhoneLabel" for="Phone">Phone:</label>
                 <input id="Phone" name="Phone" Type="Text"/>
+            </p>
         </div>
-    <div> 
+            <div class="info1"> 
         Reason for Inquiry:
+            </div>
         <select name="reason">
             <option value="Catering">Catering
             </option>
@@ -34,42 +58,34 @@
             <option value="Feedback">Feedback</option>
             <option value="Other">Other</option>
         </select>
-    </div>
-    <div>
             <table>
             <tr>
-                <td>Have you been to the restaurant?</td>
+                <td> <div class="info1">Have you been to the restaurant? </div></td>
                 <td><input type="radio" name="answer" value="No" Checked/>No<br/></td>
                 <td> <input type="radio" name="answer" value="Yes"/>Yes<br/></td>
             </tr>
         </table>
-        </div>
     <table>
-    <div>
         <tr>
-           <td> <label id="AdditionalLabel" for="Additionalinfo">Additional Information:</label></td>
+           <td> <div class="info1"><label id="AdditionalLabel" for="Additionalinfo">Additional Information:</label></div></td>
     
-            <td><textarea id="additionalinfo" name="AdditionalInformation"></textarea></td>
+            <td><textarea id="additionalinfo" name="AdditionalInformation" style="height:100px;width:200px"></textarea></td>
         </tr>
-    </div>
     </table>
-    <div>
         <table>
-        <td>Best Days to Contact You:</td>
+        <td><div class="info1">Best Days to Contact You:</div></td>
         <td><input type="checkbox" name="M" value="M"/>M<br/></td>
         <td><input type="checkbox" name="T" value="T"/>T<br/></td>
         <td><input type="checkbox" name="W" value="W"/>W<br/></td>
         <td><input type="checkbox" name="TH" value="TH"/>TH<br/></td>
         <td><input type="checkbox" name="F" value="F"/>F<br/></td>
     </table>
-    </div>
-    <div>
         <center><input type="Submit" name="Sendrequest" value="Send Request"/><br/></center>
          
-    </div>
     </form>
     <hr>
+    <div id="footer">
     <center>1725 Slough Avenue, Scranton, PA, 55426</center>
     <br>
-    <center>308-826-5962</center>
+    <center>308-826-5962</center> </div>
 </html>
