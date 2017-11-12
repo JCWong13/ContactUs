@@ -9,8 +9,15 @@
                 <title>The Office Restaurant</title>
 
             <style>
+            
+            @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Spectral+SC');
+
             .info1 {
                 color:cornflowerblue 
+            }
+
+            #required {
+                font-weight: bold;
             }
 
             p {
@@ -29,27 +36,35 @@
             <hr>
     <form action="#" method="post">
         <table>
+        <div id="required">
         <div class="info1">
             <p>
             <label id="NameLabel" for="Name">Name:</label>
             <input id="Name" name="Name" Type="Text"/>
             </p>
         </div>
+        </div>
     </table>
+        <div id="required">
         <div class="info1">
             <p>
                 <label id="EmailLabel" for="Email">Email:</label>
                 <input id="Email" name="Email" Type="Text"/>
             </p>
         </div>
+        </div>
+        <div id="required">
         <div class="info1">
             <p>
                 <label id="PhoneLabel" for="Phone">Phone:</label>
                 <input id="Phone" name="Phone" Type="Text"/>
             </p>
         </div>
+        </div>
+            <div id="required">
             <div class="info1"> 
         Reason for Inquiry:
+            </div>
             </div>
         <select name="reason">
             <option value="Catering">Catering
@@ -60,7 +75,7 @@
         </select>
             <table>
             <tr>
-                <td> <div class="info1">Have you been to the restaurant? </div></td>
+                <td> <div id="required"><div class="info1"> Have you been to the restaurant? </div></div></td>
                 <td><input type="radio" name="answer" value="No" Checked/>No<br/></td>
                 <td> <input type="radio" name="answer" value="Yes"/>Yes<br/></td>
             </tr>

@@ -1,5 +1,10 @@
 
 #head, #footer {
-    font-weight: bold;
-    color: sienna;
+    font-family: 'Spectral SC', serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: normal;
+    font-size: x-large;
+    color: #6192CA;
 }
+
+
