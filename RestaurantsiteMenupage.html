@@ -2,17 +2,29 @@
 <html>
     <head>
         <title>The Office Restaurant</title>
+
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+
         <style>
      
         @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Spectral+SC');
 
-        td {font-family: "Comic Sans MS", cursive, sans-serif;
+        p {font-family: "Comic Sans MS", cursive, sans-serif;
             color: #93BE8A;
+            font-size: large;
         }
 
         #o1,#o2,#o3,#o4,#o5,#o6,#o7 {
+            font-family: "Comic Sans MS", cursive, sans-serif;
             font-weight: bold;
-            font-size: x-large;
+            font-size: large;
             color:sienna
         }
 
@@ -54,67 +66,63 @@
     </head>
 <body>
         <div id="head"><center><h1>The Restaurant</h1></center></div>
-        <hr>
-        <a href="Restaurantsitemainpage.html">Home</a>
-        <a href="RestaurantsiteMenupage.html">Menu</a>
-        <a href="Restaurantsitecontactpage.html">Contact Us</a>
-        <hr>
+    <ul class="nav nav-tabs">
+        <li><a href="Restaurantsitemainpage.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li class="active"><a href="RestaurantsiteMenupage.html">Menu</a></li>
+        <li><a href="Restaurantsitecontactpage.html">Contact Us</a></li>
+    </ul>
 <div>
-<table>
-<tr>
-    <td><h3><center> <div id="o1">Kevin's Famous Chili</div></center></h3></td>
-    <td><h3><center><div id="o2">Pretzel Day Pretzel</div></center></h3></td>
-    <td><h3><center><div id="o3">"Big Tuna" Melt</div></center></h3></td>
-</tr>
-
-<tr><center>
-    <td style width="700px"><center>Ancho chilis, garlic, onions, ground beef, <br> tomatoes, and a hint of carpet. <br>Cup $3.95 Bowl $6.95</center></td>
-    <td style width="700px"><center>"The Works"- 18 different types of <br> sweet toppings including powdered sugar, cinnamon, <br> gummy bears, oreo pieces, diabetes, and more! $8.99</center></td>
-    <td style width="700px"><center>Sustainably caught tuna, lettuce, tomato, and cheddar cheese <br> served on grilled (George Foremann grill) sourdough bread $12.95</center></td>
-</center>
-</tr>
-</table>
-<table>
-    <tr>
-        <td><h3><center><div id="o4">Jello Stapler</div></center></h3></td>
-        <td><h3><center><div id="o5">Toby's Weed Salad</div></center></h3></td>
-        <td><h3><center><div id="o6">Christmas Goose</div></center></h3></td>
-    </tr>
-    <tr>
-        <td style width="700px"><center>A fresh stapler suspended in yellow jello.  Customers keep <br> the stapler! $6.99</center></td>
-        <td style width="700px"><center>Sliced fresh mozzarella, tomatoes, sweet basil, salt, <br> and olive oil $8.95</center></td>
-        <td style width="700px"><center>Ethically run over in the parking lot out back, plucked and roasted <br> with cayenne pepper and served with rice and a medley of assorted vegetables. <br>  Customers also get a complimentary can of goose grease. $37.95</center></td>
-    </tr>
-</table>
-<hr/>
-<center>
-<table>
-    <thead>
-        <tr>
-            <td>
-                <div id="o7"><u>Beverages</u></div>
-            </td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style width="600 px">Can of goose grease</td>
-            <td style width="100 px">$8.95</td>
-        </tr>
-        <tr>
-            <td style width="600 px">Beet juice</td>
-            <td style width="100 px">$3.95</td>
-        </tr>
-        <tr>
-            <td style width="600 px">Meredith's Moonshine</td>
-            <td style width="100 px">$3.50</td>
-        </tr>
-        <tr>
-            <td style width="600 px">Seahorse Powder drink</td>
-            <td style width="100 px">$15.00</td>
-        </tr>
-    </tbody>
-</table>
+        <div class="fluid-container">
+                <div class="row">
+                   <h3><center><div class="col-md-4"><div id="o1"><h2>Kevin's Famous Chili</h2></div><p>Ancho chilis, garlic, onions, ground beef, tomatoes, and a hint of carpet. Cup $3.95 Bowl $6.95</p></div></center></h3>
+                    <h3><center><div class="col-md-4"><div id="o2"><h2>Pretzel Day Pretzel</h2></div><p>"The Works"- 18 different types of sweet toppings including powdered sugar, cinnamon, gummy bears, oreo pieces, diabetes, and more! $8.99 </p></div></center></h3>
+                <h3><center><div class="col-md-4"><div id="o3"><h2>"Big Tuna" Melt</h2></div><p>Sustainably caught tuna, lettuce, tomato, and cheddar cheese  served on grilled (George Foremann grill) sourdough bread $12.95</p></div></center></h3>
+                </div>
+            </div>
+            
+            <div class="fluid-container">
+                    <div class="row">
+                       <h3><center><div class="col-md-4"><div id="o1"><h2>Jello Stapler</h2></div><p>A fresh stapler suspended in yellow jello.  Customers keep the stapler! $6.99</p></div></center></h3>
+                        <h3><center><div class="col-md-4"><div id="o2"><h2>Toby's Weed Salad</h2></div><p>Sliced fresh mozzarella, tomatoes, sweet basil, salt, and olive oil $8.95</p></div></center></h3>
+                    <h3><center><div class="col-md-4"><div id="o3"><h2>Christmas Goose</h2></div><p>Ethically run over in the parking lot out back, plucked and roasted with cayenne pepper and served with rice and a medley of assorted vegetables. Customers also get a complimentary can of goose grease. $37.95</p></div></center></h3>
+                    </div>
+                </div>
+            
+                    <hr/>
+            
+                    <div class="fluid-container">
+                        <div class="row">
+                                <div class="col-md-12"><div id="o7"><h2><u><center>Beverages</center></u></h2></div></div>
+                        </div>
+                    </div>
+            
+                    <div class="fluid-container">
+                            <div class="row">
+                                    <div class="col-md-6"><center><p>Can of Goose Grease</p></center></div>
+                                    <div class="col-md-6"><center><p>$8.95</p></center></div>
+                            </div>
+                    </div>
+            
+                    <div class="fluid-container">
+                            <div class="row">
+                                    <div class="col-md-6"><center><p>Beet Juice</p></center></div>
+                                    <div class="col-md-6"><center><p>$3.95</p></center></div>
+                             </div>
+                    </div>
+            
+                    <div class="fluid-container">
+                            <div class="row">
+                                    <div class="col-md-6"><center><p>Meredith's Moonshine</p></center></div>
+                                    <div class="col-md-6"><center><p>$3.50</p></center></div>
+                             </div>
+                    </div>
+            
+                    <div class="fluid-container">
+                            <div class="row">
+                                    <div class="col-md-6"><center><p>Seahorse Powder Drink</p><center></div>
+                                    <div class="col-md-6"><center><p>$15.00</p></center></div>
+                             </div>
+                    </div>
 </center>
 
 </div>
